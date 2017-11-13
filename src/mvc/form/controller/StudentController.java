@@ -13,7 +13,7 @@ public class StudentController {
     @RequestMapping(value = "/student", method = RequestMethod.GET)
     public ModelAndView student() {
         //We have passed a blank Student object in the ModelAndView object with the name 'command' because the Spring
-        //framework expects an object with the name "command" if you are using <form:form> tags in your JSP file.
+        //framework expects an object with the name 'command' if you are using <form:form> tags in your JSP file.
         //The student.jsp assumes that the variable name of the form backing object is 'command'. If you have put the
         //form backing object into the model under another name (definitely a best practice), then you can bind the
         //form to the named variable. (e.g. <form:form modelAttribute="studentVO">)
